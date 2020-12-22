@@ -9,4 +9,7 @@ module.exports = function(app) {
 
 	app.route('/products/:id')
 	.get(products.getProductById);
+
+	app.route('/pay')
+	.post(products.pay);
 };
